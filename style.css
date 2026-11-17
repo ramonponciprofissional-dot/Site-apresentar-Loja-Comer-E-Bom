@@ -1,0 +1,244 @@
+:root {
+  --main-color: #080808;
+  --black-color: #000;
+  --bg-color: #f8f3e9;
+  --border-color: 0.1rem solid rgba(0, 0, 0, 0.3);
+  --colorback: #314d3d;
+  font-size: 10px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 14rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+section {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 70;
+  background-color: var(--bg-color);
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+  max-width: 100%;
+  padding: 2rem 4rem;
+}
+
+header .logo img {
+  height: 10rem;
+  object-fit: cover;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: #e95a0c;
+  
+}
+
+.navbar .copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #e95a0c;
+}
+
+
+.navbar a:hover {
+  color: #351B12;
+  border-bottom: 0.2rem solid #351B12;
+  padding-bottom: 0.7rem;
+  font-size: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #9b321f;
+  color: #f8f3e9;
+  font-weight: 600;
+  padding: 1.2rem 3rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.home-container {
+  background: url("./imags/pratoback.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14rem 8rem 8rem;
+
+}
+
+.home-container section {
+  margin: 0;
+}
+
+
+.content {
+  max-width: 60rem;
+}
+
+.content h3 {
+  font-size: 6rem;
+  color: var(--colorback);
+}
+
+.content p {
+  font-size: 3rem;
+  color: var(--main-color);
+  font-weight: 500;
+  line-height: 2.5rem;
+  padding: 1rem 0;
+}
+
+.content a {
+  display: inline-block;
+  font-size: 2rem;
+  background-color: #9b321f;
+  color: #e95a0c;
+  font-weight: 600;
+  padding: 1.2rem 3rem;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  padding: 1.2rem 3rem;
+}
+
+.title {
+  text-align: left;
+  font-size: 5rem;
+  color: var(--colorback); 
+  text-transform: uppercase;
+}
+.title span {
+  color: #351B12;
+    text-transform: uppercase;
+}
+
+.about {
+    background-color: var(--bg-color);
+}
+
+
+.about .row {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+
+.about .row .container-image {
+    flex: 1 1 40rem;
+}
+
+.about .row .container-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.content p {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.content h3 {
+  text-align: left;
+  font-size: 5rem;
+  color: var(--colorback); 
+  text-transform: uppercase;
+}
+
+.content span {
+  color: #351B12;
+    text-transform: uppercase;
+}
+
+
+.location {
+  background-color: var(--bg-color);
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+.location .row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.location .row .map {
+  flex: 1 1 45rem;
+}
+
+.location .row .map iframe {
+  width: 100%;
+  height: 40rem;
+  border-radius: 0.8rem;
+  border: var(--border-color);
+}
+
+.location .row .content {
+  flex: 1 1 40rem;
+  padding: 2rem;
+}
+
+.location .row .content p {
+  font-size: 2rem;
+  padding: 0.6rem 0;
+}
